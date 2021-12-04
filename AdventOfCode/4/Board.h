@@ -22,6 +22,8 @@ class Board {
                 file >> board[i][j].number;
             }
         }
+
+        file >> std::ws;
     }
 
     void select(int number) {

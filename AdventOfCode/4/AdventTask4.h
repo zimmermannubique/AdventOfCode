@@ -66,11 +66,7 @@ class AdventTask4 : public AdventTask<4> {
         }
 
         while(file.good()) {
-            auto b = Board<5>(file);
-
-            if(file.good()) {
-                boards.push_back(b);
-            }
+            boards.push_back(Board<5>(file));
         }
     }
 
