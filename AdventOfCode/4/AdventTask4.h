@@ -55,16 +55,15 @@ class AdventTask4 : public AdventTask<4> {
         numbers.clear();
         boards.clear();
 
-        std::string emptyLine;
         std::string commaNumbers;
         file >> commaNumbers;
 
-        size_t pos = 0;
-        while ((pos = commaNumbers.find(",")) != std::string::npos) {
-            numbers.push_back(std::stoi(commaNumbers.substr(0, pos)));
-            commaNumbers.erase(0, pos + 1);
+        std::stringstream ss(commaNumbers);
+        int i;
+        while (ss >> i) {
+            numbers.push_back(i);
+            ss.ignore(1);
         }
-        numbers.push_back(std::stoi(commaNumbers));
 
         while(file.good()) {
             auto b = Board<5>(file);
