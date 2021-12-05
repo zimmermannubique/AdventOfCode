@@ -16,6 +16,8 @@
 #include <iterator>
 #include <limits>
 #include <bitset>
+#include <numeric>
+#include <functional>
 
 static void startAdventOfCode() {
     std::cout << "🎄🎄🎄 Advent of Code 🎄🎄🎄" << std::endl;
@@ -42,7 +44,8 @@ class AdventTask {
 
   private:
     void printDivider(bool silver) {
-        std::cout << "\n🪢🪢🪢 🎁 " << N << " " << (silver ? "🪙 SILVER 🪙" : "⭐  GOLD  ⭐") << " 🎁 🪢🪢🪢\n\n";
+        std::string img = N == 5 ? " ☕ " : " 🎁 ";
+        std::cout << "\n🪢🪢🪢" << img << N << " " << (silver ? "🪙 SILVER 🪙" : "⭐  GOLD  ⭐") << img << "🪢🪢🪢\n\n";
     }
 
     void solveTask(bool silver) {

@@ -23,6 +23,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6E360D0A275C9B8F001FFE98 /* AdventTask5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdventTask5.h; sourceTree = "<group>"; };
+		6E360D0B275C9C01001FFE98 /* VentBoard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VentBoard.h; sourceTree = "<group>"; };
+		6E360D0C275CA3C8001FFE98 /* input */ = {isa = PBXFileReference; lastKnownFileType = text; path = input; sourceTree = "<group>"; };
 		6E67702F275B9C35001E876D /* input */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = input; sourceTree = "<group>"; };
 		6E677030275B9C35001E876D /* AdventTask1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdventTask1.h; sourceTree = "<group>"; };
 		6E677031275B9C3B001E876D /* AdventTask2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdventTask2.h; sourceTree = "<group>"; };
@@ -48,6 +51,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E360D09275C9B7B001FFE98 /* 5 */ = {
+			isa = PBXGroup;
+			children = (
+				6E360D0A275C9B8F001FFE98 /* AdventTask5.h */,
+				6E360D0B275C9C01001FFE98 /* VentBoard.h */,
+				6E360D0C275CA3C8001FFE98 /* input */,
+			);
+			path = 5;
+			sourceTree = "<group>";
+		};
 		6E67702B275B9BCD001E876D /* 1 */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +130,7 @@
 				6E67702C275B9BF1001E876D /* 2 */,
 				6E67702D275B9BF7001E876D /* 3 */,
 				6E67702E275B9BFE001E876D /* 4 */,
+				6E360D09275C9B7B001FFE98 /* 5 */,
 				6E677036275B9D35001E876D /* SantasLittleHelpers */,
 			);
 			path = AdventOfCode;
