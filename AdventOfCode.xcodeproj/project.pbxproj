@@ -35,6 +35,7 @@
 		6E677038275B9D52001E876D /* AdventTask4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdventTask4.h; sourceTree = "<group>"; };
 		6E67703A275BA4C6001E876D /* input */ = {isa = PBXFileReference; lastKnownFileType = text; path = input; sourceTree = "<group>"; };
 		6E67703B275BB1C8001E876D /* Board.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Board.h; sourceTree = "<group>"; };
+		6EF02FC3275D280F002BFFD5 /* Timer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
 		6EFC382C275B8D9500E109F1 /* AdventOfCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AdventOfCode; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EFC382F275B8D9500E109F1 /* AdventOfCode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AdventOfCode.cpp; sourceTree = "<group>"; };
 		6EFC383A275B8E9E00E109F1 /* AdventTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdventTask.h; sourceTree = "<group>"; };
@@ -102,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				6EFC383A275B8E9E00E109F1 /* AdventTask.h */,
+				6EF02FC3275D280F002BFFD5 /* Timer.h */,
 			);
 			path = SantasLittleHelpers;
 			sourceTree = "<group>";

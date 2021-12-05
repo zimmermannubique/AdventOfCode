@@ -8,6 +8,8 @@
 #ifndef AdventTask_hpp
 #define AdventTask_hpp
 
+#include "Timer.h"
+
 #include <iostream>
 #include <string>
 #include <fstream>
@@ -27,15 +29,11 @@ template<int N>
 class AdventTask {
   public:
     void solveSilverTask() {
-        printDivider(true);
         solveTask(true);
-        std::cout << std::endl;
     }
 
     void solveGoldTask() {
-        printDivider(false);
         solveTask(false);
-        std::cout << std::endl;
     }
 
   protected:
@@ -45,7 +43,8 @@ class AdventTask {
   private:
     void printDivider(bool silver) {
         std::string img = N == 5 ? " ☕ " : " 🎁 ";
-        std::cout << "\n🪢🪢🪢" << img << N << " " << (silver ? "🪙 SILVER 🪙" : "⭐  GOLD  ⭐") << img << "🪢🪢🪢\n\n";
+        std::cout << "\n🪢🪢🪢" << img << N << " " << (silver ? "🪙 SILVER 🪙" : "⭐  GOLD  ⭐") << img << "🪢🪢🪢\n";
+        std::cout << std::endl;
     }
 
     void solveTask(bool silver) {
@@ -54,11 +53,18 @@ class AdventTask {
 
         std::ifstream f(ss.str());
 
+        printDivider(silver);
+
+        Timer t;
+        t.start();
+
         if(silver) {
             solveSilver(f);
         } else {
             solveGold(f);
         }
+
+        t.stop();
     }
 };
 
