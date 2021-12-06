@@ -20,6 +20,7 @@
 #include <bitset>
 #include <numeric>
 #include <functional>
+#include <map>
 
 static void startAdventOfCode() {
     std::cout << "🎄🎄🎄 Advent of Code 🎄🎄🎄" << std::endl;

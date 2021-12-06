@@ -10,6 +10,7 @@
 #include "AdventTask3.h"
 #include "AdventTask4.h"
 #include "AdventTask5.h"
+#include "AdventTask6.h"
 
 int main(int argc, const char * argv[])
 {
@@ -34,6 +35,10 @@ int main(int argc, const char * argv[])
     AdventTask5 t5;
     t5.solveSilverTask();
     t5.solveGoldTask();
+
+    AdventTask6 t6;
+    t6.solveSilverTask();
+    t6.solveGoldTask();
 
     return 0;
 }
