@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E43BD7A275F233200FFBAC4 /* input in Sources */ = {isa = PBXBuildFile; fileRef = 6E43BD79275F233200FFBAC4 /* input */; };
 		6EFC3830275B8D9500E109F1 /* AdventOfCode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6EFC382F275B8D9500E109F1 /* AdventOfCode.cpp */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,10 @@
 		6E360D0A275C9B8F001FFE98 /* AdventTask5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdventTask5.h; sourceTree = "<group>"; };
 		6E360D0B275C9C01001FFE98 /* VentBoard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VentBoard.h; sourceTree = "<group>"; };
 		6E360D0C275CA3C8001FFE98 /* input */ = {isa = PBXFileReference; lastKnownFileType = text; path = input; sourceTree = "<group>"; };
+		6E43BD79275F233200FFBAC4 /* input */ = {isa = PBXFileReference; lastKnownFileType = text; path = input; sourceTree = "<group>"; };
+		6E43BD7B275F235C00FFBAC4 /* AdventTask7.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdventTask7.h; sourceTree = "<group>"; };
+		6E43BD8B276074E500FFBAC4 /* AdventTask8.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdventTask8.h; sourceTree = "<group>"; };
+		6E43BD8C276074FE00FFBAC4 /* input */ = {isa = PBXFileReference; lastKnownFileType = text; path = input; sourceTree = "<group>"; };
 		6E5B79FE275DCF510049CDC8 /* AdventTask6.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdventTask6.h; sourceTree = "<group>"; };
 		6E5B79FF275DCF650049CDC8 /* input */ = {isa = PBXFileReference; lastKnownFileType = text; path = input; sourceTree = "<group>"; };
 		6E67702F275B9C35001E876D /* input */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = input; sourceTree = "<group>"; };
@@ -37,6 +42,8 @@
 		6E677038275B9D52001E876D /* AdventTask4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdventTask4.h; sourceTree = "<group>"; };
 		6E67703A275BA4C6001E876D /* input */ = {isa = PBXFileReference; lastKnownFileType = text; path = input; sourceTree = "<group>"; };
 		6E67703B275BB1C8001E876D /* Board.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Board.h; sourceTree = "<group>"; };
+		6EE55DAF2761C53B001F9E1F /* AdventTask9.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdventTask9.h; sourceTree = "<group>"; };
+		6EE55DB02761C543001F9E1F /* input */ = {isa = PBXFileReference; lastKnownFileType = text; path = input; sourceTree = "<group>"; };
 		6EF02FC3275D280F002BFFD5 /* Timer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
 		6EFC382C275B8D9500E109F1 /* AdventOfCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AdventOfCode; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EFC382F275B8D9500E109F1 /* AdventOfCode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AdventOfCode.cpp; sourceTree = "<group>"; };
@@ -62,6 +69,24 @@
 				6E360D0C275CA3C8001FFE98 /* input */,
 			);
 			path = 5;
+			sourceTree = "<group>";
+		};
+		6E43BD78275F232300FFBAC4 /* 7 */ = {
+			isa = PBXGroup;
+			children = (
+				6E43BD79275F233200FFBAC4 /* input */,
+				6E43BD7B275F235C00FFBAC4 /* AdventTask7.h */,
+			);
+			path = 7;
+			sourceTree = "<group>";
+		};
+		6E43BD8A276074D200FFBAC4 /* 8 */ = {
+			isa = PBXGroup;
+			children = (
+				6E43BD8B276074E500FFBAC4 /* AdventTask8.h */,
+				6E43BD8C276074FE00FFBAC4 /* input */,
+			);
+			path = 8;
 			sourceTree = "<group>";
 		};
 		6E5B79FD275DCF3A0049CDC8 /* 6 */ = {
@@ -119,6 +144,15 @@
 			path = SantasLittleHelpers;
 			sourceTree = "<group>";
 		};
+		6EE55DAE2761C525001F9E1F /* 9 */ = {
+			isa = PBXGroup;
+			children = (
+				6EE55DAF2761C53B001F9E1F /* AdventTask9.h */,
+				6EE55DB02761C543001F9E1F /* input */,
+			);
+			path = 9;
+			sourceTree = "<group>";
+		};
 		6EFC3823275B8D9500E109F1 = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +179,9 @@
 				6E67702E275B9BFE001E876D /* 4 */,
 				6E360D09275C9B7B001FFE98 /* 5 */,
 				6E5B79FD275DCF3A0049CDC8 /* 6 */,
+				6E43BD78275F232300FFBAC4 /* 7 */,
+				6E43BD8A276074D200FFBAC4 /* 8 */,
+				6EE55DAE2761C525001F9E1F /* 9 */,
 				6E677036275B9D35001E876D /* SantasLittleHelpers */,
 			);
 			path = AdventOfCode;
@@ -181,6 +218,7 @@
 				TargetAttributes = {
 					6EFC382B275B8D9500E109F1 = {
 						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
 					};
 				};
 			};
@@ -207,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E43BD7A275F233200FFBAC4 /* input in Sources */,
 				6EFC3830275B8D9500E109F1 /* AdventOfCode.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,9 +368,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				HEADER_SEARCH_PATHS = "AdventOfCode/**";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -339,9 +386,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				HEADER_SEARCH_PATHS = "AdventOfCode/**";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
