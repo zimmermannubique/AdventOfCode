@@ -21,6 +21,8 @@
 #include <numeric>
 #include <functional>
 #include <map>
+#include <unordered_map>
+#include <stack>
 
 static void startAdventOfCode() {
     std::cout << "🎄🎄🎄 Advent of Code 🎄🎄🎄" << std::endl;
@@ -43,7 +45,8 @@ class AdventTask {
 
   private:
     void printDivider(bool silver) {
-        std::string img = N == 5 ? " ☕ " : " 🎁 ";
+        std::string img = N == 10 ? " 👕 " :(N == 5 ? " ☕ " : " 🎁 ");
+
         std::cout << "\n🪢🪢🪢" << img << N << " " << (silver ? "🪙 SILVER 🪙" : "⭐  GOLD  ⭐") << img << "🪢🪢🪢\n";
         std::cout << std::endl;
     }

@@ -14,46 +14,67 @@
 #include "AdventTask7.h"
 #include "AdventTask8.h"
 #include "AdventTask9.h"
+#include "AdventTask10.h"
+#include "AdventTask11.h"
+#include "AdventTask12.h"
+#include "AdventTask13.h"
 
 int main(int argc, const char * argv[])
 {
     startAdventOfCode();
 
-    AdventTask1 t1;
-    t1.solveSilverTask();
-    t1.solveGoldTask();
+//    AdventTask1 t1;
+//    t1.solveSilverTask();
+//    t1.solveGoldTask();
+//
+//    AdventTask2 t2;
+//    t2.solveSilverTask();
+//    t2.solveGoldTask();
+//
+//    AdventTask3 t3;
+//    t3.solveSilverTask();
+//    t3.solveGoldTask();
+//
+//    AdventTask4 t4;
+//    t4.solveSilverTask();
+//    t4.solveGoldTask();
+//
+//    AdventTask5 t5;
+//    t5.solveSilverTask();
+//    t5.solveGoldTask();
+//
+//    AdventTask6 t6;
+//    t6.solveSilverTask();
+//    t6.solveGoldTask();
 
-    AdventTask2 t2;
-    t2.solveSilverTask();
-    t2.solveGoldTask();
-
-    AdventTask3 t3;
-    t3.solveSilverTask();
-    t3.solveGoldTask();
-
-    AdventTask4 t4;
-    t4.solveSilverTask();
-    t4.solveGoldTask();
-
-    AdventTask5 t5;
-    t5.solveSilverTask();
-    t5.solveGoldTask();
-
-    AdventTask6 t6;
-    t6.solveSilverTask();
-    t6.solveGoldTask();
-
+//    // I sometimes crash... please fix me...
 //    AdventTask7 t7;
 //    t7.solveSilverTask();
 //    t7.solveGoldTask();
 
-    AdventTask8 t8;
-    t8.solveSilverTask();
-    t8.solveGoldTask();
+//    AdventTask8 t8;
+//    t8.solveSilverTask();
+//    t8.solveGoldTask();
+//
+//    AdventTask9 t9;
+//    t9.solveSilverTask();
+//    t9.solveGoldTask();
+//
+//    AdventTask10 t10;
+//    t10.solveSilverTask();
+//    t10.solveGoldTask();
 
-    AdventTask9 t9;
-    t9.solveSilverTask();
-    t9.solveGoldTask();
+//    AdventTask11 t11;
+//    t11.solveSilverTask();
+//    t11.solveGoldTask();
+//
+//    AdventTask12 t12;
+//    t12.solveSilverTask();
+//    t12.solveGoldTask();
+
+    AdventTask13 t13;
+    t13.solveSilverTask();
+    t13.solveGoldTask();
 
     return 0;
 }
