@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6E43BD7A275F233200FFBAC4 /* input in Sources */ = {isa = PBXBuildFile; fileRef = 6E43BD79275F233200FFBAC4 /* input */; };
 		6EFC3830275B8D9500E109F1 /* AdventOfCode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6EFC382F275B8D9500E109F1 /* AdventOfCode.cpp */; };
 /* End PBXBuildFile section */
 
@@ -297,7 +296,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E43BD7A275F233200FFBAC4 /* input in Sources */,
 				6EFC3830275B8D9500E109F1 /* AdventOfCode.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

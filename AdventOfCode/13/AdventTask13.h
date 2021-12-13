@@ -13,19 +13,20 @@ class AdventTask13 : public AdventTask<13> {
   protected:
     virtual void solveSilver(std::ifstream &file) {
         std::string input;
-        std::set<ManualPoint> points;
+        std::unordered_set<ManualPoint, ManualPointHash> points;
         bool scanPoints = true;
 
         while(file.good()) {
             file >> input;
 
-            if(input == "fold" || input== "along") {
+            if(input == "fold") {
+                file >> input; // along...
                 scanPoints = false;
                 continue;
             }
 
             if(scanPoints) {
-                points.insert(ManualPoint(input));
+                points.emplace(input);
             }
             else {
                 points = doFold(points, input);
@@ -37,19 +38,20 @@ class AdventTask13 : public AdventTask<13> {
 
     virtual void solveGold(std::ifstream &file) {
         std::string input;
-        std::set<ManualPoint> points;
+        std::unordered_set<ManualPoint, ManualPointHash> points;
         bool scanPoints = true;
 
         while(file.good()) {
             file >> input;
 
-            if(input == "fold" || input== "along") {
+            if(input == "fold") {
+                file >> input; // along...
                 scanPoints = false;
                 continue;
             }
 
             if(scanPoints) {
-                points.insert(ManualPoint(input));
+                points.emplace(input);
             }
             else {
                 points = doFold(points, input);
@@ -63,7 +65,7 @@ class AdventTask13 : public AdventTask<13> {
             maxY = std::max(maxY, p.y);
         }
 
-        std::vector<std::vector<char>> image(maxY+1, std::vector<char>(maxX+1, '.'));
+        std::vector<std::string> image(maxY+1, std::string(maxX+1, '.'));
 
         for(auto &p : points) {
             image[p.y][p.x] = 'X';
@@ -89,12 +91,12 @@ class AdventTask13 : public AdventTask<13> {
         return s.find("x") != std::string::npos;
     }
 
-    std::set<ManualPoint> doFold(const std::set<ManualPoint>& points, const std::string &input) {
+    std::unordered_set<ManualPoint, ManualPointHash> doFold(const std::unordered_set<ManualPoint, ManualPointHash>& points, const std::string &input) {
         auto fold = split(input);
         bool isXFold = isX(fold.first);
         int foldValue = std::stoi(fold.second);
 
-        std::set<ManualPoint> newPoints;
+        std::unordered_set<ManualPoint, ManualPointHash> newPoints;
 
         for(auto &p : points) {
             int value = isXFold ? p.x : p.y;
@@ -104,11 +106,7 @@ class AdventTask13 : public AdventTask<13> {
             } else if(value > foldValue) {
                 int newValue = foldValue - std::abs(foldValue - value);
                 if(newValue >= 0) {
-                    if(isXFold) {
-                        newPoints.insert(ManualPoint(newValue, p.y));
-                    } else {
-                        newPoints.insert(ManualPoint(p.x, newValue));
-                    }
+                    newPoints.insert(isXFold ? ManualPoint(newValue, p.y) : ManualPoint(p.x, newValue));
                 }
             }
         }
