@@ -24,6 +24,7 @@
 #include <unordered_map>
 #include <unordered_set>
 #include <stack>
+#include <queue>
 
 static void startAdventOfCode() {
     std::cout << "🎄🎄🎄 Advent of Code 🎄🎄🎄" << std::endl;

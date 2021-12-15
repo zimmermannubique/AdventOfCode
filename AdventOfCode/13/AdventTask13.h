@@ -5,6 +5,9 @@
 //  Created by Marco Zimmermann on 13.12.21.
 //
 
+#ifndef AdventTask13_h
+#define AdventTask13_h
+
 #include "AdventTask.h"
 
 #include "Manual.h"
@@ -114,3 +117,5 @@ class AdventTask13 : public AdventTask<13> {
         return newPoints;
     }
 };
+
+#endif /* AdventTask13_h */
