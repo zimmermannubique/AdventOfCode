@@ -9,13 +9,15 @@
 #define Node_h
 
 struct Node : public std::enable_shared_from_this<Node> {
-    Node(int value, std::shared_ptr<Node> parent) : value(value), left(nullptr), right(nullptr), parent(parent) {}
-    Node(std::shared_ptr<Node> left, std::shared_ptr<Node> right) : value(-1), left(left), right(right), parent(nullptr) {}
+    Node(int value, std::shared_ptr<Node> parent) : value(value), parent(parent) {}
+    Node(std::shared_ptr<Node> left, std::shared_ptr<Node> right) : value(-1), left(left), right(right) {}
 
     int value;
-    std::shared_ptr<Node> left;
-    std::shared_ptr<Node> right;
-    std::shared_ptr<Node> parent;
+    std::shared_ptr<Node> left = nullptr;
+    std::shared_ptr<Node> right = nullptr;
+    std::shared_ptr<Node> parent = nullptr;
+    std::shared_ptr<Node> valueLeft = nullptr;
+    std::shared_ptr<Node> valueRight = nullptr;
 
     int totalSum() {
         return isValue() ? value : (3 * left->totalSum() + 2 * right->totalSum());
@@ -29,6 +31,17 @@ struct Node : public std::enable_shared_from_this<Node> {
             if(r) { continue; }
             r = split();
         }
+    }
+
+    std::shared_ptr<Node> rightest() {
+        auto t = shared_from_this();
+        while(!t->isValue()) { t = t->right; }
+        return t;
+    }
+
+    static void newLeftRightValuePair(std::shared_ptr<Node> &left, std::shared_ptr<Node> right) {
+        if(left) { left->valueRight = right; }
+        if(right) { right->valueLeft = left; }
     }
 
   private:
@@ -48,8 +61,15 @@ struct Node : public std::enable_shared_from_this<Node> {
             auto top = stack.top(); stack.pop();
             if(top.second == 4 && top.first->parentOfValues()) {
                 auto toExplode = top.first;
-                fill(toExplode, toExplode->left->value, true);
-                fill(toExplode, toExplode->right->value, false);
+
+                auto valueLeft = toExplode->left->valueLeft;
+                auto valueRight = toExplode->right->valueRight;
+                if(valueLeft) { valueLeft->value += toExplode->left->value; }
+                if(valueRight) { valueRight->value += toExplode->right->value; }
+
+                Node::newLeftRightValuePair(valueLeft, toExplode);
+                Node::newLeftRightValuePair(toExplode, valueRight);
+
                 toExplode->left = nullptr;
                 toExplode->right = nullptr;
                 toExplode->value = 0;
@@ -63,41 +83,6 @@ struct Node : public std::enable_shared_from_this<Node> {
         return false;
     }
 
-    void fill(std::shared_ptr<Node> startNode, int value, bool goToLeft) {
-        auto startParent = valueParent(startNode, goToLeft);
-        if(!startParent) { return; }
-
-        auto start = goToLeft ? startParent->left : startParent->right;
-
-        std::stack<std::shared_ptr<Node>> stack;
-        stack.push(start);
-
-        while(stack.size() > 0) {
-            auto top = stack.top(); stack.pop();
-            if(top->isValue()) {
-                top->value += value;
-                return;
-            }
-
-            auto first = goToLeft ? top->left : top->right;
-            auto second = goToLeft ? top->right : top->left;
-            if(first) { stack.push(first); }
-            if(second) { stack.push(second); }
-        }
-    }
-
-    std::shared_ptr<Node> valueParent(std::shared_ptr<Node> node, bool goToLeft) {
-        auto current = node;
-        auto parent = node->parent;
-
-        while(parent && ((goToLeft ? parent->left : parent->right) == current)) {
-            current = parent;
-            parent = parent->parent;
-        }
-
-        return parent;
-    }
-
     bool split() {
         std::stack<std::shared_ptr<Node>> stack;
         stack.emplace(shared_from_this());
@@ -107,6 +92,9 @@ struct Node : public std::enable_shared_from_this<Node> {
             if(top->isValue() && top->value >= 10) {
                 top->left = std::make_shared<Node>(std::floor(top->value / 2.0), top);
                 top->right = std::make_shared<Node>(std::ceil(top->value / 2.0), top);
+                Node::newLeftRightValuePair(top->valueLeft, top->left);
+                Node::newLeftRightValuePair(top->right, top->valueRight);
+                Node::newLeftRightValuePair(top->left, top->right);
                 return true;
             }
 

@@ -14,14 +14,16 @@ class AdventTask18 : public AdventTask<18> {
   protected:
     virtual void solveSilver(std::ifstream &file) {
         std::string input;
-        std::shared_ptr<Node> r = nullptr;
+        std::shared_ptr<Node> root = nullptr;
+        std::shared_ptr<Node> rightest = nullptr;
 
         while(file >> input) {
-            auto i = tree(input);
-            r = !r ? i : reducedRoot(r, i);
+            auto i = tree(input, false);
+            root = !root ? i.first : reducedRoot(root, rightest, i.first, i.second);
+            rightest = root->rightest();
         }
 
-        std::cout << "Result: " << r->totalSum() << std::endl;
+        std::cout << "Result: " << root->totalSum() << std::endl;
     }
 
     virtual void solveGold(std::ifstream &file) {
@@ -36,16 +38,21 @@ class AdventTask18 : public AdventTask<18> {
 
         for(int i=0; i<summands.size(); ++i) {
             for(int j=0; j<summands.size(); ++j) {
-                max = std::max(max, i==j ? 0 : reducedRoot(tree(summands[i]), tree(summands[j]))->totalSum());
+                auto l = tree(summands[i], true);
+                auto r = tree(summands[j], false);
+                max = std::max(max, i==j ? 0 : reducedRoot(l.first, l.second, r.first, r.second)->totalSum());
             }
         }
 
         std::cout << "Result: " << max << std::endl;
     }
 
-    std::shared_ptr<Node> tree(const std::string& input) {
+    std::pair<std::shared_ptr<Node>, std::shared_ptr<Node>> tree(const std::string& input, bool isLeft) {
         auto newRoot = std::make_shared<Node>(Node(-1, nullptr));
         auto currentNode = newRoot;
+
+        std::shared_ptr<Node> left = nullptr;
+        std::shared_ptr<Node> right = nullptr;
 
         for(auto& i : input) {
             if(i == '[') {
@@ -59,17 +66,25 @@ class AdventTask18 : public AdventTask<18> {
             } else {
                 int n = (int)i - 48;
                 currentNode->value = n;
+
+                Node::newLeftRightValuePair(right, currentNode);
+
+                if(!left) { left = currentNode; }
+                right = currentNode;
                 currentNode = currentNode->parent;
             }
         }
 
-        return newRoot;
+        return std::make_pair(newRoot, isLeft ? right : left);
     }
 
-    std::shared_ptr<Node> reducedRoot(std::shared_ptr<Node> left, std::shared_ptr<Node> right) {
+    std::shared_ptr<Node> reducedRoot(std::shared_ptr<Node> left, std::shared_ptr<Node> leftRightestValueNode,  std::shared_ptr<Node> right, std::shared_ptr<Node> rightLeftestValueNode) {
         auto root = std::make_shared<Node>(left, right);
         root->left->parent = root;
         root->right->parent = root;
+
+        Node::newLeftRightValuePair(leftRightestValueNode, rightLeftestValueNode);
+
         root->reduce();
         return root;
     }
