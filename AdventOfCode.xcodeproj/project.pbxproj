@@ -53,6 +53,13 @@
 		6E67703B275BB1C8001E876D /* Board.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Board.h; sourceTree = "<group>"; };
 		6E9FD4CB276466540099E432 /* AdventTask11.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdventTask11.h; sourceTree = "<group>"; };
 		6E9FD4CC276466540099E432 /* input */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = input; sourceTree = "<group>"; };
+		6EA526C0276B043E002DACE1 /* AdventTask16.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdventTask16.h; sourceTree = "<group>"; };
+		6EA526C1276B0447002DACE1 /* input */ = {isa = PBXFileReference; lastKnownFileType = text; path = input; sourceTree = "<group>"; };
+		6EA526C5276C4F93002DACE1 /* AdventTask17.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdventTask17.h; sourceTree = "<group>"; };
+		6EA526C6276C4F9D002DACE1 /* input */ = {isa = PBXFileReference; lastKnownFileType = text; path = input; sourceTree = "<group>"; };
+		6EA526CA276DA2F4002DACE1 /* AdventTask18.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdventTask18.h; sourceTree = "<group>"; };
+		6EA526CB276DA2F4002DACE1 /* input */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = input; sourceTree = "<group>"; };
+		6EA526CC276DD32C002DACE1 /* Node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
 		6EBEE23D2769B507009692DF /* AdventTask15.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdventTask15.h; sourceTree = "<group>"; };
 		6EBEE23E2769B50F009692DF /* input */ = {isa = PBXFileReference; lastKnownFileType = text; path = input; sourceTree = "<group>"; };
 		6EBEE23F2769B7B1009692DF /* IntGraph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntGraph.h; sourceTree = "<group>"; };
@@ -205,6 +212,34 @@
 			path = 11;
 			sourceTree = "<group>";
 		};
+		6EA526BF276B0430002DACE1 /* 16 */ = {
+			isa = PBXGroup;
+			children = (
+				6EA526C0276B043E002DACE1 /* AdventTask16.h */,
+				6EA526C1276B0447002DACE1 /* input */,
+			);
+			path = 16;
+			sourceTree = "<group>";
+		};
+		6EA526C4276C4F76002DACE1 /* 17 */ = {
+			isa = PBXGroup;
+			children = (
+				6EA526C5276C4F93002DACE1 /* AdventTask17.h */,
+				6EA526C6276C4F9D002DACE1 /* input */,
+			);
+			path = 17;
+			sourceTree = "<group>";
+		};
+		6EA526C9276DA2F4002DACE1 /* 18 */ = {
+			isa = PBXGroup;
+			children = (
+				6EA526CA276DA2F4002DACE1 /* AdventTask18.h */,
+				6EA526CC276DD32C002DACE1 /* Node.h */,
+				6EA526CB276DA2F4002DACE1 /* input */,
+			);
+			path = 18;
+			sourceTree = "<group>";
+		};
 		6EBEE23C2769B4EE009692DF /* 15 */ = {
 			isa = PBXGroup;
 			children = (
@@ -259,6 +294,9 @@
 				6E29CAE52767111500243762 /* 13 */,
 				6E353CF327685B1D00A32516 /* 14 */,
 				6EBEE23C2769B4EE009692DF /* 15 */,
+				6EA526BF276B0430002DACE1 /* 16 */,
+				6EA526C4276C4F76002DACE1 /* 17 */,
+				6EA526C9276DA2F4002DACE1 /* 18 */,
 				6E677036275B9D35001E876D /* SantasLittleHelpers */,
 			);
 			path = AdventOfCode;
