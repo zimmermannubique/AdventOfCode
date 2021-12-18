@@ -93,8 +93,6 @@ int main(int argc, const char * argv[])
 //    t16.solveSilverTask();
 //    t16.solveGoldTask();
 
-// 
-
     AdventTask18 t18;
     t18.solveSilverTask();
     t18.solveGoldTask();

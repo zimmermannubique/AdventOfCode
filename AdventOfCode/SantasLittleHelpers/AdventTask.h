@@ -26,7 +26,6 @@
 #include <stack>
 #include <queue>
 #include <memory>
-#include <ctype.h>
 
 static void startAdventOfCode() {
     std::cout << "🎄🎄🎄 Advent of Code 🎄🎄🎄" << std::endl;
