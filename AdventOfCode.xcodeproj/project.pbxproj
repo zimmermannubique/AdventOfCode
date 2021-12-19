@@ -60,6 +60,9 @@
 		6EA526CA276DA2F4002DACE1 /* AdventTask18.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdventTask18.h; sourceTree = "<group>"; };
 		6EA526CB276DA2F4002DACE1 /* input */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = input; sourceTree = "<group>"; };
 		6EA526CC276DD32C002DACE1 /* Node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		6EA526CE276EA89F002DACE1 /* AdventTask19.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdventTask19.h; sourceTree = "<group>"; };
+		6EA526CF276EA8A6002DACE1 /* input */ = {isa = PBXFileReference; lastKnownFileType = text; path = input; sourceTree = "<group>"; };
+		6EA526D0276F196D002DACE1 /* Scanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scanner.h; sourceTree = "<group>"; };
 		6EBEE23D2769B507009692DF /* AdventTask15.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdventTask15.h; sourceTree = "<group>"; };
 		6EBEE23E2769B50F009692DF /* input */ = {isa = PBXFileReference; lastKnownFileType = text; path = input; sourceTree = "<group>"; };
 		6EBEE23F2769B7B1009692DF /* IntGraph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntGraph.h; sourceTree = "<group>"; };
@@ -240,6 +243,16 @@
 			path = 18;
 			sourceTree = "<group>";
 		};
+		6EA526CD276EA88E002DACE1 /* 19 */ = {
+			isa = PBXGroup;
+			children = (
+				6EA526CE276EA89F002DACE1 /* AdventTask19.h */,
+				6EA526CF276EA8A6002DACE1 /* input */,
+				6EA526D0276F196D002DACE1 /* Scanner.h */,
+			);
+			path = 19;
+			sourceTree = "<group>";
+		};
 		6EBEE23C2769B4EE009692DF /* 15 */ = {
 			isa = PBXGroup;
 			children = (
@@ -297,6 +310,7 @@
 				6EA526BF276B0430002DACE1 /* 16 */,
 				6EA526C4276C4F76002DACE1 /* 17 */,
 				6EA526C9276DA2F4002DACE1 /* 18 */,
+				6EA526CD276EA88E002DACE1 /* 19 */,
 				6E677036275B9D35001E876D /* SantasLittleHelpers */,
 			);
 			path = AdventOfCode;
@@ -329,7 +343,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1310;
+				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					6EFC382B275B8D9500E109F1 = {
 						CreatedOnToolsVersion = 13.1;

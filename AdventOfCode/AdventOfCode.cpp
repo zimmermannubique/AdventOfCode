@@ -23,6 +23,7 @@
 #include "AdventTask16.h"
 #include "AdventTask17.h"
 #include "AdventTask18.h"
+#include "AdventTask19.h"
 
 int main(int argc, const char * argv[])
 {
@@ -93,9 +94,13 @@ int main(int argc, const char * argv[])
 //    t16.solveSilverTask();
 //    t16.solveGoldTask();
 
-    AdventTask18 t18;
-    t18.solveSilverTask();
-    t18.solveGoldTask();
+//    AdventTask18 t18;
+//    t18.solveSilverTask();
+//    t18.solveGoldTask();
+
+    AdventTask19 t19;
+    t19.solveSilverTask();
+    t19.solveGoldTask();
 
     return 0;
 }
