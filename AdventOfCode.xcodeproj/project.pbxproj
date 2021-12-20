@@ -63,6 +63,8 @@
 		6EA526CE276EA89F002DACE1 /* AdventTask19.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdventTask19.h; sourceTree = "<group>"; };
 		6EA526CF276EA8A6002DACE1 /* input */ = {isa = PBXFileReference; lastKnownFileType = text; path = input; sourceTree = "<group>"; };
 		6EA526D0276F196D002DACE1 /* Scanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scanner.h; sourceTree = "<group>"; };
+		6EA526D2276FF1CC002DACE1 /* AdventTask20.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdventTask20.h; sourceTree = "<group>"; };
+		6EA526D3276FF1F6002DACE1 /* input */ = {isa = PBXFileReference; lastKnownFileType = text; path = input; sourceTree = "<group>"; };
 		6EBEE23D2769B507009692DF /* AdventTask15.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdventTask15.h; sourceTree = "<group>"; };
 		6EBEE23E2769B50F009692DF /* input */ = {isa = PBXFileReference; lastKnownFileType = text; path = input; sourceTree = "<group>"; };
 		6EBEE23F2769B7B1009692DF /* IntGraph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntGraph.h; sourceTree = "<group>"; };
@@ -253,6 +255,15 @@
 			path = 19;
 			sourceTree = "<group>";
 		};
+		6EA526D1276FF1B5002DACE1 /* 20 */ = {
+			isa = PBXGroup;
+			children = (
+				6EA526D2276FF1CC002DACE1 /* AdventTask20.h */,
+				6EA526D3276FF1F6002DACE1 /* input */,
+			);
+			path = 20;
+			sourceTree = "<group>";
+		};
 		6EBEE23C2769B4EE009692DF /* 15 */ = {
 			isa = PBXGroup;
 			children = (
@@ -311,6 +322,7 @@
 				6EA526C4276C4F76002DACE1 /* 17 */,
 				6EA526C9276DA2F4002DACE1 /* 18 */,
 				6EA526CD276EA88E002DACE1 /* 19 */,
+				6EA526D1276FF1B5002DACE1 /* 20 */,
 				6E677036275B9D35001E876D /* SantasLittleHelpers */,
 			);
 			path = AdventOfCode;
