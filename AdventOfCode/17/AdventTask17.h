@@ -76,8 +76,8 @@ class AdventTask17 : public AdventTask<17> {
         return false;
     }
 
-    std::pair<int, int> split(const std::string& s)
-    {
+
+    std::pair<int, int> split(const std::string& s) {
         auto pos = s.find("..");
         return std::make_pair(std::stoi(s.substr(0, pos)), std::stoi(s.substr(pos+2, s.length())));
     }

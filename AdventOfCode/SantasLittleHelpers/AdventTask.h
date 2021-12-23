@@ -9,6 +9,7 @@
 #define AdventTask_hpp
 
 #include "Timer.h"
+#include "StringHelper.h"
 
 #include <iostream>
 #include <string>
