@@ -25,14 +25,11 @@
 /* Begin PBXFileReference section */
 		6E07E9242765B8BC001D632A /* AdventTask12.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdventTask12.h; sourceTree = "<group>"; };
 		6E07E9252765B8BC001D632A /* input */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = input; sourceTree = "<group>"; };
-		6E07E9262765BBC8001D632A /* Graph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Graph.h; sourceTree = "<group>"; };
 		6E29CAE62767113D00243762 /* AdventTask13.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdventTask13.h; sourceTree = "<group>"; };
 		6E29CAE72767115500243762 /* input */ = {isa = PBXFileReference; lastKnownFileType = text; path = input; sourceTree = "<group>"; };
-		6E29CAE82767122D00243762 /* Manual.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Manual.h; sourceTree = "<group>"; };
 		6E353CF427685B4100A32516 /* AdventTask14.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdventTask14.h; sourceTree = "<group>"; };
 		6E353CF527685B4A00A32516 /* input */ = {isa = PBXFileReference; lastKnownFileType = text; path = input; sourceTree = "<group>"; };
 		6E360D0A275C9B8F001FFE98 /* AdventTask5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdventTask5.h; sourceTree = "<group>"; };
-		6E360D0B275C9C01001FFE98 /* VentBoard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VentBoard.h; sourceTree = "<group>"; };
 		6E360D0C275CA3C8001FFE98 /* input */ = {isa = PBXFileReference; lastKnownFileType = text; path = input; sourceTree = "<group>"; };
 		6E43BD79275F233200FFBAC4 /* input */ = {isa = PBXFileReference; lastKnownFileType = text; path = input; sourceTree = "<group>"; };
 		6E43BD7B275F235C00FFBAC4 /* AdventTask7.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdventTask7.h; sourceTree = "<group>"; };
@@ -50,7 +47,6 @@
 		6E677035275B9C6A001E876D /* input */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = input; sourceTree = "<group>"; };
 		6E677038275B9D52001E876D /* AdventTask4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdventTask4.h; sourceTree = "<group>"; };
 		6E67703A275BA4C6001E876D /* input */ = {isa = PBXFileReference; lastKnownFileType = text; path = input; sourceTree = "<group>"; };
-		6E67703B275BB1C8001E876D /* Board.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Board.h; sourceTree = "<group>"; };
 		6E9FD4CB276466540099E432 /* AdventTask11.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdventTask11.h; sourceTree = "<group>"; };
 		6E9FD4CC276466540099E432 /* input */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = input; sourceTree = "<group>"; };
 		6EA526C0276B043E002DACE1 /* AdventTask16.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdventTask16.h; sourceTree = "<group>"; };
@@ -59,33 +55,27 @@
 		6EA526C6276C4F9D002DACE1 /* input */ = {isa = PBXFileReference; lastKnownFileType = text; path = input; sourceTree = "<group>"; };
 		6EA526CA276DA2F4002DACE1 /* AdventTask18.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdventTask18.h; sourceTree = "<group>"; };
 		6EA526CB276DA2F4002DACE1 /* input */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = input; sourceTree = "<group>"; };
-		6EA526CC276DD32C002DACE1 /* Node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
 		6EA526CE276EA89F002DACE1 /* AdventTask19.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdventTask19.h; sourceTree = "<group>"; };
 		6EA526CF276EA8A6002DACE1 /* input */ = {isa = PBXFileReference; lastKnownFileType = text; path = input; sourceTree = "<group>"; };
-		6EA526D0276F196D002DACE1 /* Scanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scanner.h; sourceTree = "<group>"; };
 		6EA526D2276FF1CC002DACE1 /* AdventTask20.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdventTask20.h; sourceTree = "<group>"; };
 		6EA526D3276FF1F6002DACE1 /* input */ = {isa = PBXFileReference; lastKnownFileType = text; path = input; sourceTree = "<group>"; };
 		6EA526D5277195BC002DACE1 /* AdventTask21.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdventTask21.h; sourceTree = "<group>"; };
 		6EA526D6277195C5002DACE1 /* input */ = {isa = PBXFileReference; lastKnownFileType = text; path = input; sourceTree = "<group>"; };
 		6EBEE23D2769B507009692DF /* AdventTask15.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdventTask15.h; sourceTree = "<group>"; };
 		6EBEE23E2769B50F009692DF /* input */ = {isa = PBXFileReference; lastKnownFileType = text; path = input; sourceTree = "<group>"; };
-		6EBEE23F2769B7B1009692DF /* IntGraph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntGraph.h; sourceTree = "<group>"; };
 		6EE55DAF2761C53B001F9E1F /* AdventTask9.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdventTask9.h; sourceTree = "<group>"; };
 		6EE55DB02761C543001F9E1F /* input */ = {isa = PBXFileReference; lastKnownFileType = text; path = input; sourceTree = "<group>"; };
 		6EE7844E2772ED7F003D7AF8 /* AdventTask22.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdventTask22.h; sourceTree = "<group>"; };
 		6EE7844F2772ED8B003D7AF8 /* input */ = {isa = PBXFileReference; lastKnownFileType = text; path = input; sourceTree = "<group>"; };
-		6EE7845027735CFE003D7AF8 /* Range.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Range.h; sourceTree = "<group>"; };
 		6EE7845427743897003D7AF8 /* AdventTask23.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdventTask23.h; sourceTree = "<group>"; };
 		6EE78455277438A1003D7AF8 /* input */ = {isa = PBXFileReference; lastKnownFileType = text; path = input; sourceTree = "<group>"; };
 		6EE7845627749D34003D7AF8 /* StringHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringHelper.h; sourceTree = "<group>"; };
-		6EE7845727750975003D7AF8 /* State.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
 		6EE7845927758A4D003D7AF8 /* AdventTask24.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdventTask24.h; sourceTree = "<group>"; };
 		6EE7845A27758A59003D7AF8 /* input */ = {isa = PBXFileReference; lastKnownFileType = text; path = input; sourceTree = "<group>"; };
 		6EED81CB2776E078005F285F /* AdventTask25.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdventTask25.h; sourceTree = "<group>"; };
 		6EED81CC2776E085005F285F /* input */ = {isa = PBXFileReference; lastKnownFileType = text; path = input; sourceTree = "<group>"; };
-		6EED81CD2776F914005F285F /* ALU.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALU.h; sourceTree = "<group>"; };
 		6EF02FC3275D280F002BFFD5 /* Timer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
-		6EFC382C275B8D9500E109F1 /* AdventOfCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AdventOfCode; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EFC382C275B8D9500E109F1 /* AdventOfCode-2022 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "AdventOfCode-2022"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EFC382F275B8D9500E109F1 /* AdventOfCode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AdventOfCode.cpp; sourceTree = "<group>"; };
 		6EFC383A275B8E9E00E109F1 /* AdventTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdventTask.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,7 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				6E07E9242765B8BC001D632A /* AdventTask12.h */,
-				6E07E9262765BBC8001D632A /* Graph.h */,
 				6E07E9252765B8BC001D632A /* input */,
 			);
 			path = 12;
@@ -115,7 +104,6 @@
 			isa = PBXGroup;
 			children = (
 				6E29CAE62767113D00243762 /* AdventTask13.h */,
-				6E29CAE82767122D00243762 /* Manual.h */,
 				6E29CAE72767115500243762 /* input */,
 			);
 			path = 13;
@@ -134,7 +122,6 @@
 			isa = PBXGroup;
 			children = (
 				6E360D0A275C9B8F001FFE98 /* AdventTask5.h */,
-				6E360D0B275C9C01001FFE98 /* VentBoard.h */,
 				6E360D0C275CA3C8001FFE98 /* input */,
 			);
 			path = 5;
@@ -143,8 +130,8 @@
 		6E43BD78275F232300FFBAC4 /* 7 */ = {
 			isa = PBXGroup;
 			children = (
-				6E43BD79275F233200FFBAC4 /* input */,
 				6E43BD7B275F235C00FFBAC4 /* AdventTask7.h */,
+				6E43BD79275F233200FFBAC4 /* input */,
 			);
 			path = 7;
 			sourceTree = "<group>";
@@ -207,7 +194,6 @@
 			isa = PBXGroup;
 			children = (
 				6E677038275B9D52001E876D /* AdventTask4.h */,
-				6E67703B275BB1C8001E876D /* Board.h */,
 				6E67703A275BA4C6001E876D /* input */,
 			);
 			path = 4;
@@ -254,7 +240,6 @@
 			isa = PBXGroup;
 			children = (
 				6EA526CA276DA2F4002DACE1 /* AdventTask18.h */,
-				6EA526CC276DD32C002DACE1 /* Node.h */,
 				6EA526CB276DA2F4002DACE1 /* input */,
 			);
 			path = 18;
@@ -265,7 +250,6 @@
 			children = (
 				6EA526CE276EA89F002DACE1 /* AdventTask19.h */,
 				6EA526CF276EA8A6002DACE1 /* input */,
-				6EA526D0276F196D002DACE1 /* Scanner.h */,
 			);
 			path = 19;
 			sourceTree = "<group>";
@@ -292,7 +276,6 @@
 			isa = PBXGroup;
 			children = (
 				6EBEE23D2769B507009692DF /* AdventTask15.h */,
-				6EBEE23F2769B7B1009692DF /* IntGraph.h */,
 				6EBEE23E2769B50F009692DF /* input */,
 			);
 			path = 15;
@@ -311,7 +294,6 @@
 			isa = PBXGroup;
 			children = (
 				6EE7844E2772ED7F003D7AF8 /* AdventTask22.h */,
-				6EE7845027735CFE003D7AF8 /* Range.h */,
 				6EE7844F2772ED8B003D7AF8 /* input */,
 			);
 			path = 22;
@@ -321,7 +303,6 @@
 			isa = PBXGroup;
 			children = (
 				6EE7845427743897003D7AF8 /* AdventTask23.h */,
-				6EE7845727750975003D7AF8 /* State.h */,
 				6EE78455277438A1003D7AF8 /* input */,
 			);
 			path = 23;
@@ -331,7 +312,6 @@
 			isa = PBXGroup;
 			children = (
 				6EE7845927758A4D003D7AF8 /* AdventTask24.h */,
-				6EED81CD2776F914005F285F /* ALU.h */,
 				6EE7845A27758A59003D7AF8 /* input */,
 			);
 			path = 24;
@@ -357,7 +337,7 @@
 		6EFC382D275B8D9500E109F1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6EFC382C275B8D9500E109F1 /* AdventOfCode */,
+				6EFC382C275B8D9500E109F1 /* AdventOfCode-2022 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -399,9 +379,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6EFC382B275B8D9500E109F1 /* AdventOfCode */ = {
+		6EFC382B275B8D9500E109F1 /* AdventOfCode-2022 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6EFC3833275B8D9500E109F1 /* Build configuration list for PBXNativeTarget "AdventOfCode" */;
+			buildConfigurationList = 6EFC3833275B8D9500E109F1 /* Build configuration list for PBXNativeTarget "AdventOfCode-2022" */;
 			buildPhases = (
 				6EFC3828275B8D9500E109F1 /* Sources */,
 				6EFC3829275B8D9500E109F1 /* Frameworks */,
@@ -411,9 +391,9 @@
 			);
 			dependencies = (
 			);
-			name = AdventOfCode;
+			name = "AdventOfCode-2022";
 			productName = AdventOfCode;
-			productReference = 6EFC382C275B8D9500E109F1 /* AdventOfCode */;
+			productReference = 6EFC382C275B8D9500E109F1 /* AdventOfCode-2022 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -423,7 +403,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					6EFC382B275B8D9500E109F1 = {
 						CreatedOnToolsVersion = 13.1;
@@ -431,7 +411,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6EFC3827275B8D9500E109F1 /* Build configuration list for PBXProject "AdventOfCode" */;
+			buildConfigurationList = 6EFC3827275B8D9500E109F1 /* Build configuration list for PBXProject "AdventOfCode-2022" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -444,7 +424,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6EFC382B275B8D9500E109F1 /* AdventOfCode */,
+				6EFC382B275B8D9500E109F1 /* AdventOfCode-2022 */,
 			);
 		};
 /* End PBXProject section */
@@ -495,6 +475,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -554,6 +535,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -577,7 +559,9 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				HEADER_SEARCH_PATHS = "AdventOfCode/**";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -595,7 +579,9 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				HEADER_SEARCH_PATHS = "AdventOfCode/**";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -610,7 +596,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6EFC3827275B8D9500E109F1 /* Build configuration list for PBXProject "AdventOfCode" */ = {
+		6EFC3827275B8D9500E109F1 /* Build configuration list for PBXProject "AdventOfCode-2022" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6EFC3831275B8D9500E109F1 /* Debug */,
@@ -619,7 +605,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6EFC3833275B8D9500E109F1 /* Build configuration list for PBXNativeTarget "AdventOfCode" */ = {
+		6EFC3833275B8D9500E109F1 /* Build configuration list for PBXNativeTarget "AdventOfCode-2022" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6EFC3834275B8D9500E109F1 /* Debug */,
