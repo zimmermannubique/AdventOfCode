@@ -35,13 +35,13 @@ int main(int argc, const char * argv[])
 {
     startAdventOfCode();
 
-    AdventTask1 t1;
-    t1.solveSilverTask();
-    t1.solveGoldTask();
+//    AdventTask1 t1;
+//    t1.solveSilverTask();
+//    t1.solveGoldTask();
 
-//    AdventTask2 t2;
-//    t2.solveSilverTask();
-//    t2.solveGoldTask();
+    AdventTask2 t2;
+    t2.solveSilverTask();
+    t2.solveGoldTask();
 
 //    AdventTask3 t3;
 //    t3.solveSilverTask();
