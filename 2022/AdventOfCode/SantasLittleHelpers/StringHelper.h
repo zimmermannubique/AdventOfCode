@@ -35,6 +35,21 @@ class StringHelper {
 
         return v;
     }
+
+    static std::vector<std::string> split(std::string& input, const std::string& delimiter) {
+        size_t pos = 0;
+        std::vector<std::string> w;
+        while ((pos = input.find(delimiter)) != std::string::npos) {
+            w.push_back(input.substr(0, pos));
+            input.erase(0, pos + delimiter.length());
+        }
+
+        if(input.size() > 0) {
+            w.push_back(input);
+        }
+
+        return w;
+    }
 };
 
 #endif /* StringHelper_h */

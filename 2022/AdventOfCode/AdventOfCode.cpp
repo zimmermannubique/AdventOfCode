@@ -91,21 +91,25 @@ int main(int argc, const char * argv[])
 //    t14.solveSilverTask();
 //    t14.solveGoldTask();
 
-    AdventTask15 t15;
-    t15.solveSilverTask();
-    t15.solveGoldTask();
-
+//    AdventTask15 t15;
+//    t15.solveSilverTask();
+//    t15.solveGoldTask();
+//
 //    AdventTask16 t16;
 //    t16.solveSilverTask();
 //    t16.solveGoldTask();
-
+//
+//    AdventTask17 t17;
+//    t17.solveSilverTask();
+//    t17.solveGoldTask();
+//
 //    AdventTask18 t18;
 //    t18.solveSilverTask();
 //    t18.solveGoldTask();
 
-//    AdventTask19 t19;
-//    t19.solveSilverTask();
-//    t19.solveGoldTask();
+    AdventTask19 t19;
+    t19.solveSilverTask();
+    t19.solveGoldTask();
 
 //    AdventTask20 t20;
 //    t20.solveSilverTask();
